@@ -5,6 +5,7 @@ This repository provides examples of common JavaScript object methods, array met
  
 [Online Compiler](https://www.programiz.com/javascript/online-compiler/)
 
+
 ## Table of Contents
 - [Object Methods](#object-methods)
   - [Object.keys()](#objectkeys)
@@ -79,7 +80,7 @@ This repository provides examples of common JavaScript object methods, array met
 ## Object Methods
 
 ### Object.keys()
-Returns an array of a given object's own enumerable property names.
+Returns an array of a given object's own enumerable property names. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John",
@@ -92,7 +93,7 @@ console.log(keys); // ["name", "age", "city"]
 ```
 
 ### Object.values()
-Returns an array of a given object's own enumerable property values.
+Returns an array of a given object's own enumerable property values. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John",
@@ -105,7 +106,7 @@ console.log(values); // ["John", 30, "New York"]
 ```
 
 ### Object.entries()
-Returns an array of a given object's own enumerable property [key, value] pairs.
+Returns an array of a given object's own enumerable property [key, value] pairs. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John",
@@ -118,7 +119,7 @@ console.log(entries); // [["name", "John"], ["age", 30], ["city", "New York"]]
 ```
 
 ### Object.assign()
-Copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
+Copies all enumerable own properties from one or more source objects to a target object. It returns the target object. [Back To Top](#table-of-contents)
 ```javascript
 var target = { a: 1 };
 var source = { b: 2, c: 3 };
@@ -128,7 +129,7 @@ console.log(returnedTarget); // { a: 1, b: 2, c: 3 }
 ```
 
 ### Object.create()
-Creates a new object with the specified prototype object and properties.
+Creates a new object with the specified prototype object and properties. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     fullName: function() {
@@ -143,7 +144,7 @@ console.log(john.fullName()); // "John Doe"
 ```
 
 ### Object.freeze()
-Freezes an object, preventing new properties from being added and existing properties from being modified or deleted.
+Freezes an object, preventing new properties from being added and existing properties from being modified or deleted. [Back To Top](#table-of-contents)
 ```javascript
 var obj = {
     prop: 42
@@ -156,7 +157,7 @@ console.log(obj.prop); // 42
 ```
 
 ### Object.seal()
-Seals an object, preventing new properties from being added and marking all existing properties as non-configurable.
+Seals an object, preventing new properties from being added and marking all existing properties as non-configurable. [Back To Top](#table-of-contents)
 ```javascript
 var obj = {
     prop: 42
@@ -172,7 +173,7 @@ console.log(obj.prop); // 33
 ```
 
 ### Object.getOwnPropertyNames()
-Returns an array of all properties (including non-enumerable properties) found directly in a given object.
+Returns an array of all properties (including non-enumerable properties) found directly in a given object. [Back To Top](#table-of-contents)
 ```javascript
 var obj = {
     name: "John",
@@ -184,7 +185,7 @@ console.log(props); // ["name", "age"]
 ```
 
 ### Object.defineProperty()
-Defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+Defines a new property directly on an object, or modifies an existing property on an object, and returns the object. [Back To Top](#table-of-contents)
 ```javascript
 var obj = {};
 
@@ -202,7 +203,7 @@ console.log(obj.name); // "John"
 ```
 
 ### Object.defineProperties()
-Defines new or modifies existing properties directly on an object, returning the object.
+Defines new or modifies existing properties directly on an object, returning the object. [Back To Top](#table-of-contents)
 ```javascript
 var obj = {};
 
@@ -222,7 +223,7 @@ console.log(obj.age); // 30
 ```
 
 ### Object.getPrototypeOf()
-Returns the prototype (i.e., the value of the internal `[[Prototype]]` property) of the specified object.
+Returns the prototype (i.e., the value of the internal `[[Prototype]]` property) of the specified object. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John",
@@ -234,7 +235,7 @@ console.log(proto); // {} (The prototype of plain objects is Object.prototype)
 ```
 
 ### Object.is()
-Compares if two values are the same value. It is similar to the `===` operator but differs in handling special cases.
+Compares if two values are the same value. It is similar to the `===` operator but differs in handling special cases. [Back To Top](#table-of-contents)
 ```javascript
 console.log(Object.is(25, 25)); // true
 console.log(Object.is(NaN, NaN)); // true
@@ -242,7 +243,7 @@ console.log(Object.is(0, -0)); // false
 ```
 
 ### Object.isExtensible()
-Determines if an object is extensible (i.e., whether new properties can be added to it).
+Determines if an object is extensible (i.e., whether new properties can be added to it). [Back To Top](#table-of-contents)
 ```javascript
 var obj = {};
 console.log(Object.isExtensible(obj)); // true
@@ -252,7 +253,7 @@ console.log(Object.isExtensible(obj)); // false
 ```
 
 ### Object.preventExtensions()
-Prevents new properties from ever being added to an object (i.e., prevents future extensions to the object).
+Prevents new properties from ever being added to an object (i.e., prevents future extensions to the object). [Back To Top](#table-of-contents)
 ```javascript
 var obj = { name: "John" };
 
@@ -263,7 +264,7 @@ console.log(obj.age); // undefined
 ```
 
 ### Object.hasOwnProperty()
-Returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
+Returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it). [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John"
@@ -276,7 +277,7 @@ console.log(person.hasOwnProperty("age")); // false
 ```
 
 ### Object.propertyIsEnumerable()
-Returns a boolean indicating whether the specified property is enumerable.
+Returns a boolean indicating whether the specified property is enumerable. [Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John"
@@ -293,14 +294,14 @@ console.log(person.propertyIsEnumerable("age")); // false
 ```
 
 ### Object.toString()
-Returns a string representing the object.
+Returns a string representing the object. [Back To Top](#table-of-contents)
 ```javascript
 var obj = { name: "John", age: 30 };
 console.log(obj.toString()); // "[object Object]"
 ```
 
 ### Object.valueOf()
-Returns the primitive value of the specified object.
+Returns the primitive value of the specified object. [Back To Top](#table-of-contents)
 ```javascript
 var obj = { name: "John" };
 console.log(obj.valueOf()); // { name: "John" }
@@ -309,7 +310,7 @@ console.log(obj.valueOf()); // { name: "John" }
 ## Array Methods
 
 ### push()
-Adds one or more elements to the end of an array and returns the new length of the array.
+Adds one or more elements to the end of an array and returns the new length of the array. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana"];
 fruits.push("Orange");
@@ -317,7 +318,7 @@ console.log(fruits); // ["Apple", "Banana", "Orange"]
 ```
 
 ### pop()
-Removes the last element from an array and returns that element.
+Removes the last element from an array and returns that element. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 var last = fruits.pop();
@@ -326,7 +327,7 @@ console.log(fruits); // ["Apple", "Banana"]
 ```
 
 ### shift()
-Removes the first element from an array and returns that element. This method changes the length of the array.
+Removes the first element from an array and returns that element. This method changes the length of the array. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 var first = fruits.shift();
@@ -335,7 +336,7 @@ console.log(fruits); // ["Banana", "Orange"]
 ```
 
 ### unshift()
-Adds one or more elements to the beginning of an array and returns the new length of the array.
+Adds one or more elements to the beginning of an array and returns the new length of the array. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Banana", "Orange"];
 fruits.unshift("Apple");
@@ -343,7 +344,7 @@ console.log(fruits); // ["Apple", "Banana", "Orange"]
 ```
 
 ### slice()
-Returns a shallow copy of a portion of an array into a new array object. The original array is not modified.
+Returns a shallow copy of a portion of an array into a new array object. The original array is not modified. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange", "Mango"];
 
@@ -365,7 +366,7 @@ console.log(clonedFruits); // ["Apple", "Banana", "Orange", "Mango", "Pineapple"
 ```
 
 ### splice()
-Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange", "Mango"];
 var removed = fruits.splice(1, 2, "Grapes", "Pineapple");
@@ -374,7 +375,7 @@ console.log(fruits); // ["Apple", "Grapes", "Pineapple", "Mango"]
 ```
 
 ### concat()
-Merges two or more arrays. This method does not change the existing arrays but returns a new array.
+Merges two or more arrays. This method does not change the existing arrays but returns a new array. [Back To Top](#table-of-contents)
 ```javascript
 var array1 = [1, 2, 3];
 var array2 = [4, 5, 6];
@@ -383,7 +384,7 @@ console.log(combined); // [1, 2, 3, 4, 5, 6]
 ```
 
 ### join()
-Joins all elements of an array into a string. You can specify a separator, which defaults to a comma if none is provided.
+Joins all elements of an array into a string. You can specify a separator, which defaults to a comma if none is provided. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 var string = fruits.join(", ");
@@ -391,7 +392,7 @@ console.log(string); // "Apple, Banana, Orange"
 ```
 
 ### reverse()
-Reverses the order of the elements in an array. The first array element becomes the last, and the last becomes the first.
+Reverses the order of the elements in an array. The first array element becomes the last, and the last becomes the first. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 fruits.reverse();
@@ -399,7 +400,7 @@ console.log(fruits); // ["Orange", "Banana", "Apple"]
 ```
 
 ### sort()
-Sorts the elements of an array in place and returns the array. The default sort order is ascending, built upon converting the elements into strings.
+Sorts the elements of an array in place and returns the array. The default sort order is ascending, built upon converting the elements into strings. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
@@ -413,7 +414,7 @@ console.log(numbers); // [1, 2, 3, 4, 5]
 ```
 
 ### indexOf()
-Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+Returns the first index at which a given element can be found in the array, or -1 if it is not present. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange", "Mango"];
 var index = fruits.indexOf("Banana");
@@ -421,7 +422,7 @@ console.log(index); // 1
 ```
 
 ### lastIndexOf()
-Returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at `fromIndex`.
+Returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at `fromIndex`. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [2, 5, 9, 2];
 var index = numbers.lastIndexOf(2);
@@ -429,7 +430,7 @@ console.log(index); // 3
 ```
 
 ### forEach()
-Executes a provided function once for each array element.
+Executes a provided function once for each array element. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 fruits.forEach(function(fruit, index) {
@@ -442,7 +443,7 @@ fruits.forEach(function(fruit, index) {
 ```
 
 ### map()
-Creates a new array with the results of calling a provided function on every element in the calling array.
+Creates a new array with the results of calling a provided function on every element in the calling array. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 4, 9, 16];
 var doubles = numbers.map(function(number) {
@@ -452,7 +453,7 @@ console.log(doubles); // [2, 8, 18, 32]
 ```
 
 ### filter()
-Creates a new array with all elements that pass the test implemented by the provided function.
+Creates a new array with all elements that pass the test implemented by the provided function. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var evenNumbers = numbers.filter(function(number) {
@@ -462,7 +463,7 @@ console.log(evenNumbers); // [2, 4]
 ```
 
 ### reduce()
-Executes a reducer function on each element of the array, resulting in a single output value.
+Executes a reducer function on each element of the array, resulting in a single output value. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var sum = numbers.reduce(function(total, number) {
@@ -472,7 +473,7 @@ console.log(sum); // 15
 ```
 
 ### reduceRight()
-Applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
+Applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var sum = numbers.reduceRight(function(total, number) {
@@ -482,7 +483,7 @@ console.log(sum); // 15
 ```
 
 ### some()
-Tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value. [More](some-and-every.md)
+Tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value. [Back To Top](#table-of-contents) [More](some-and-every.md)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var hasEven = numbers.some(function(number) {
@@ -492,7 +493,7 @@ console.log(hasEven); // true
 ```
 
 ### every()
-Tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value. [More](some-and-every.md)
+Tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value. [Back To Top](#table-of-contents) [More](some-and-every.md)
 ```javascript
 var numbers = [2, 4, 6, 8];
 var allEven = numbers.every(function(number) {
@@ -502,7 +503,7 @@ console.log(allEven); // true
 ```
 
 ### find()
-Returns the value of the first element in the provided array that satisfies the provided testing function. Otherwise, `undefined` is returned.
+Returns the value of the first element in the provided array that satisfies the provided testing function. Otherwise, `undefined` is returned. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var found = numbers.find(function(number) {
@@ -512,7 +513,7 @@ console.log(found); // 4
 ```
 
 ### findIndex()
-Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, -1 is returned.
+Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, -1 is returned. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
 var index = numbers.findIndex(function(number) {
@@ -522,7 +523,7 @@ console.log(index); // 3
 ```
 
 ### isArray()
-Determines whether the passed value is an array.
+Determines whether the passed value is an array. [Back To Top](#table-of-contents)
 ```javascript
 var numbers = [1, 2, 3];
 var result = Array.isArray(numbers);
@@ -533,7 +534,7 @@ console.log(Array.isArray(notAnArray)); // false
 ```
 
 ### toString()
-Returns a string representing the array and its elements.
+Returns a string representing the array and its elements. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 var result = fruits.toString();
@@ -543,7 +544,7 @@ console.log(result); // "Apple,Banana
 ```
 
 ### valueOf()
-Returns the array itself.
+Returns the array itself. [Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 var result = fruits.valueOf();
@@ -553,6 +554,8 @@ console.log(result); // ["Apple", "Banana", "Orange"]
 ## Loops, Objects, and Arrays
 
 ### Looping Through an Array
+[Back To Top](#table-of-contents)
+
 ```javascript
 var fruits = ["Apple", "Banana", "Orange", "Mango"];
 
@@ -573,6 +576,8 @@ fruits.forEach(function(fruit, index) {
 ```
 
 ### Looping Through an Object
+[Back To Top](#table-of-contents)
+
 ```javascript
 var person = {
     name: "John",
@@ -587,6 +592,8 @@ for (var key in person) {
 ```
 
 ### Nested Loops
+[Back To Top](#table-of-contents)
+
 ```javascript
 var matrix = [
     [1, 2, 3],
@@ -602,6 +609,7 @@ for (var i = 0; i < matrix.length; i++) {
 ```
 
 ### Object Creation and Access
+[Back To Top](#table-of-contents)
 ```javascript
 var car = {
     make: "Toyota",
@@ -618,6 +626,7 @@ console.log(car.getCarInfo()); // "Toyota Camry (2020)"
 ```
 
 ### Array Manipulation
+[Back To Top](#table-of-contents)
 ```javascript
 var fruits = ["Apple", "Banana", "Orange"];
 
@@ -633,6 +642,7 @@ console.log(fruits); // ["Apple", "Banana", "Orange"]
 ## Advanced JavaScript Examples
 
 ### Higher-Order Functions
+[Back To Top](#table-of-contents)
 ```javascript
 function multiplyBy(factor) {
     return function(number) {
@@ -648,6 +658,7 @@ console.log(triple(5)); // 15
 ```
 
 ### Currying
+[Back To Top](#table-of-contents)
 ```javascript
 function add(a) {
     return function(b) {
@@ -662,6 +673,7 @@ console.log(result); // 6
 ```
 
 ### Debouncing
+[Back To Top](#table-of-contents)
 ```javascript
 function debounce(func, delay) {
     var timeoutId;
@@ -679,6 +691,7 @@ window.addEventListener("resize", logMessage);
 ```
 
 ### Throttling
+[Back To Top](#table-of-contents)
 ```javascript
 function throttle(func, limit) {
     var inThrottle;
@@ -701,6 +714,7 @@ window.addEventListener("scroll", logMessage);
 ```
 
 ### Event Delegation
+[Back To Top](#table-of-contents)
 ```javascript
 document.querySelector("#parent").addEventListener("click", function(event) {
     if (event.target && event.target.matches("li.item")) {
@@ -717,6 +731,7 @@ document.querySelector("#parent").addEventListener("click", function(event) {
 ```
 
 ### Promise Chaining
+[Back To Top](#table-of-contents)
 ```javascript
 function fetchData() {
     return new Promise(function(resolve) {
@@ -741,6 +756,7 @@ fetchData()
 ```
 
 ### Dynamic Imports
+[Back To Top](#table-of-contents)
 ```javascript
 document.getElementById("loadModule").addEventListener("click", function() {
     import("./myModule.js").then(function(module) {
@@ -755,6 +771,7 @@ export function myFunction() {
 ```
 
 ### Generators
+[Back To Top](#table-of-contents)
 ```javascript
 function* idGenerator() {
     var id = 1;
@@ -771,6 +788,7 @@ console.log(generator.next().value); // 3
 ```
 
 ### Proxy Object
+[Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "Alice",
@@ -801,6 +819,7 @@ console.log(proxyPerson.age); // 30
 ```
 
 ### Closures with Private Variables
+[Back To Top](#table-of-contents)
 ```javascript
 function createCounter() {
     var count = 0;
@@ -828,6 +847,7 @@ console.log(counter.getCount()); // 1
 ```
 
 ### Custom Error Handling
+[Back To Top](#table-of-contents)
 ```javascript
 class CustomError extends Error {
     constructor(message) {
@@ -844,6 +864,7 @@ try {
 ```
 
 ### Async Iterators
+[Back To Top](#table-of-contents)
 ```javascript
 async function* asyncGenerator() {
     for (var i = 1; i <= 3; i++) {
@@ -862,6 +883,7 @@ async function* asyncGenerator() {
 ```
 
 ### Memoization
+[Back To Top](#table-of-contents)
 ```javascript
 function memoize(fn) {
     var cache = {};
@@ -889,6 +911,7 @@ console.log(memoizedFunction(5)); // 25 (cached)
 ```
 
 ### Template Literals
+[Back To Top](#table-of-contents)
 ```javascript
 var user = {
     name: "Alice",
@@ -902,6 +925,7 @@ console.log(message); // "Hello, my name is Alice, I am 25 years old and I live 
 ```
 
 ### Destructuring Assignment
+[Back To Top](#table-of-contents)
 ```javascript
 var person = {
     name: "John",
@@ -920,7 +944,7 @@ console.log(city); // "Los Angeles"
 ```
 
 ### Promises
-A `Promise` is an object representing the eventual completion or failure of an asynchronous operation. [More](Promise.md)
+A `Promise` is an object representing the eventual completion or failure of an asynchronous operation. [Back To Top](#table-of-contents) [More](Promise.md)
 ```javascript
 function fetchData() {
     return new Promise(function(resolve, reject) {
@@ -947,7 +971,7 @@ fetchData()
 ```
 
 ### Async/Await
-`async/await` is a syntax for working with promises in a cleaner, more readable way. [More](Async-Await.md)
+`async/await` is a syntax for working with promises in a cleaner, more readable way. [Back To Top](#table-of-contents) [More](Async-Await.md)
 ```javascript
 async function fetchData() {
     try {
@@ -966,7 +990,7 @@ fetchData();
 ```
 
 ### Shallow Copy and Deep Copy
-- **Shallow Copy**: Copies the top-level properties, but nested objects or arrays are still referenced, not copied.
+- **Shallow Copy**: Copies the top-level properties, but nested objects or arrays are still referenced, not copied. [Back To Top](#table-of-contents)
 
 ```javascript
 var original = { name: "John", age: 30, address: { city: "New York" } };
@@ -980,7 +1004,7 @@ console.log(original.name); // "John" (not affected)
 console.log(original.address.city); // "Los Angeles" (affected because of shallow copy)
 ```
 
-- **Deep Copy**: Copies all levels of the object or array, creating a completely independent clone.
+- **Deep Copy**: Copies all levels of the object or array, creating a completely independent clone. [Back To Top](#table-of-contents)
 
 ```javascript
 var original = { name: "John", age: 30, address: { city: "New York" } };
