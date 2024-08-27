@@ -1238,9 +1238,3 @@ deepCopy.address.city = "Los Angeles";
 console.log(original.name); // "John" (not affected)
 console.log(original.address.city); // "New York" (not affected)
 ```
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-This README.md file now includes sections on Promises, `async/await`, and the concepts of shallow and deep copy, along with comprehensive examples of object and array methods and advanced JavaScript techniques. This should serve as a valuable reference for learning and applying JavaScript concepts in various scenarios.
