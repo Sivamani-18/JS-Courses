@@ -481,7 +481,7 @@ var sum = numbers.reduceRight(function(total, number) {
 console.log(sum); // 15
 ```
 
-### some()[some()](some-and-every.md)
+### some() [More](some-and-every.md)
 Tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
@@ -491,7 +491,7 @@ var hasEven = numbers.some(function(number) {
 console.log(hasEven); // true
 ```
 
-### every()
+### every() [More](some-and-every.md)
 Tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 ```javascript
 var numbers = [2, 4, 6, 8];
