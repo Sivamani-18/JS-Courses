@@ -7,6 +7,9 @@ This repository provides examples of common JavaScript object methods, array met
 
 ## More Topic
 - [React with Redux](React%20with%20Redux.md)
+- [React Router](React%20Router%20v6.md)
+- [Event Listeners](Event%20Listeners.md)
+- [Add,Remove Class](Add-Remove-Class.md)
 
 ## Table of Contents
 - [Object Methods](#object-methods)
