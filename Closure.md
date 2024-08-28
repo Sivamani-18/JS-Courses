@@ -1,3 +1,4 @@
+[Back to main](README.md#more-topic)
 
 A closure in JavaScript is a function that retains access to its lexical scope, even when the function is executed outside that scope. Closures allow a function to access variables from an enclosing scope, even after that scope has exited.
 
