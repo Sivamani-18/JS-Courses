@@ -83,7 +83,7 @@ This repository provides examples of common JavaScript object methods, array met
   - [Promises](#promises)
   - [Async/Await](#asyncawait)
   - [Shallow Copy and Deep Copy](#shallow-copy-and-deep-copy)
-  - [closure](#closure)
+  - [Closure](#closure)
   - [Callback Function](#basic-callback-function)
 
 ## Object Methods
