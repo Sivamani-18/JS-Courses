@@ -1,3 +1,5 @@
+[Back to main](README.md#more-topic)
+
 Here's a example of using React with Redux to manage a simple counter application.
 
 ### **1. Install Dependencies**
