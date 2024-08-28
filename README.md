@@ -1088,3 +1088,22 @@ const myClosure = outerFunction(); // outerFunction returns innerFunction
 myClosure(); // "I'm outside!"
 ```
 
+
+### Basic Callback Function
+
+[Back To Top](#table-of-contents) [More](Callback%20functions.md)
+
+Here’s a simple example of a callback function:
+
+```javascript
+function greeting(name) {
+    console.log('Hello ' + name);
+}
+
+function processUserInput(callback) {
+    const name = prompt('Please enter your name.');
+    callback(name);
+}
+
+processUserInput(greeting);
+```
