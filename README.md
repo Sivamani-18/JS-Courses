@@ -6,7 +6,7 @@ This repository provides examples of common JavaScript object methods, array met
 [Online Compiler](https://www.programiz.com/javascript/online-compiler/)
 
 ## More Topic
-- [React with Redux](React with Redux.md)
+- [React with Redux](React%20with%20Redux.md)
 
 ## Table of Contents
 - [Object Methods](#object-methods)
