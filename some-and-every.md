@@ -1,3 +1,5 @@
+[Back to main](README.md#more-topic)
+
 Here are more examples demonstrating the usage of the `some()` and `every()` methods in JavaScript.
 
 ### **1. `some()` Examples**
