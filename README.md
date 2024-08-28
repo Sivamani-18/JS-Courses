@@ -83,6 +83,7 @@ This repository provides examples of common JavaScript object methods, array met
   - [Promises](#promises)
   - [Async/Await](#asyncawait)
   - [Shallow Copy and Deep Copy](#shallow-copy-and-deep-copy)
+  - [closure](#closure)
 
 ## Object Methods
 
@@ -1062,3 +1063,28 @@ deepCopy.address.city = "Los Angeles";
 console.log(original.name); // "John" (not affected)
 console.log(original.address.city); // "New York" (not affected)
 ```
+
+### Closure
+A closure in JavaScript is a function that retains access to its lexical scope, even when the function is executed outside that scope. Closures allow a function to access variables from an enclosing scope, even after that scope has exited.
+
+Here’s a simple example to illustrate closures in JavaScript:
+
+[Back To Top](#table-of-contents) [More](Closure.md)
+
+### **Basic Closure Example**
+
+```javascript
+function outerFunction() {
+    const outerVariable = "I'm outside!";
+
+    function innerFunction() {
+        console.log(outerVariable); // Can access outerVariable even though outerFunction has finished executing
+    }
+
+    return innerFunction;
+}
+
+const myClosure = outerFunction(); // outerFunction returns innerFunction
+myClosure(); // "I'm outside!"
+```
+
