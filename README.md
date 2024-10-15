@@ -357,7 +357,7 @@ console.log(fruits); // ["Apple", "Banana", "Orange"]
 ### slice()
 Returns a shallow copy of a portion of an array into a new array object. The original array is not modified. [Back To Top](#table-of-contents)
 ```javascript
-var fruits = ["Apple", "Banana", "Orange", "Mango"];
+var fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple"];
 
 // Basic slicing
 var citrus = fruits.slice(1, 3);
