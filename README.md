@@ -6,6 +6,7 @@ This repository provides examples of common JavaScript object methods, array met
 [JS Online Compiler](https://www.programiz.com/javascript/online-compiler/)
 
 ## More Topic
+- [React Interview Questions](React Interview Questions.md)
 - [useContext and useReducer](useContext-and-useReducer.md)
 - [React Context Provider](React%20Context%20provider.md)
 - [Context with TypeScript for ThemeProvider](Context%20with%20TypeScript%20for%20ThemeProvider.md)
