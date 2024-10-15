@@ -1,7 +1,3 @@
-State management in React applications can be challenging, especially when dealing with complex data flows and asynchronous operations. Redux has long been a popular choice for managing state, but it came with boilerplate and complexity. Enter **Redux Toolkit**, the official, recommended way to write Redux logic. It provides a powerful yet easy-to-use API that simplifies common tasks like creating reducers, actions, and handling side effects.
-
-In this article, we will explore `createSlice` and `createAsyncThunk` from Redux Toolkit, demonstrating how they help manage both synchronous and asynchronous state changes with minimal code.
-
 ## Why Redux Toolkit?
 
 Redux Toolkit addresses many pain points of traditional Redux:
